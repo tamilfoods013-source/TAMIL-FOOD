@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAMIL FOOD | Authentic Tamil Taste</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav><a class="brand" href="#">TAMIL <span>FOOD</span></a><a class="admin-link" href="?admin=1">Admin</a></nav>
+    <div class="hero-content">
+      <p class="eyebrow">AUTHENTIC • FRESH • DELICIOUS</p>
+      <h1>A taste of<br><em>Tamil tradition</em></h1>
+      <p>Traditional flavours, freshly prepared with love.</p>
+      <a class="cta" href="#menu">Explore Menu</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">WELCOME TO TAMIL FOOD</p>
+      <h2>Good food. Great memories.</h2>
+      <p>Discover delicious Tamil favourites made fresh for you.</p>
+    </section>
+    <section id="menu" class="menu-section">
+      <div class="section-head"><div><p class="eyebrow">MADE WITH LOVE</p><h2>Our Menu</h2></div><input id="search" type="search" placeholder="Search dishes..."></div>
+      <div id="categories" class="categories"></div>
+      <div id="menu-grid" class="menu-grid"></div>
+    </section>
+    <section class="order-banner">
+      <div><p class="eyebrow">CRAVING SOMETHING DELICIOUS?</p><h2>Order your favourites today.</h2></div>
+      <a id="order-all" class="cta" href="#">Order on WhatsApp</a>
+    </section>
+  </main>
+  <footer><strong>TAMIL FOOD</strong><p>Authentic Tamil taste, made fresh.</p><small>© <span id="year"></span> TAMIL FOOD</small></footer>
+
+  <div id="admin-panel" class="admin-panel" hidden>
+    <div class="admin-card">
+      <div class="admin-top"><div><p class="eyebrow">WEBSITE CONTROL</p><h2>Admin Settings</h2></div><button id="close-admin" class="close">×</button></div>
+      <p class="notice">Changes save in this browser. To update the live website for all customers, export the settings and update the website files before publishing.</p>
+      <label>WhatsApp number (with country code)<input id="wa-number" placeholder="94771234567"></label>
+      <div class="admin-menu-head"><h3>Menu items</h3><button id="add-item" class="small-btn">+ Add item</button></div>
+      <div id="admin-items"></div>
+      <div class="admin-actions">
+        <button id="save-settings" class="cta">Save changes</button>
+        <button id="export-settings" class="secondary">Export settings</button>
+        <label class="import-btn">Import settings<input id="import-settings" type="file" accept="application/json"></label>
+        <button id="reset-settings" class="danger">Reset sample menu</button>
+      </div>
+      <p id="admin-message" class="admin-message" aria-live="polite"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
